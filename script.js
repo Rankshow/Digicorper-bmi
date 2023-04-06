@@ -17,7 +17,7 @@ const calculateSum = () => {
     const error = document.getElementById('error');
     
     // suming the two value
-    const sum = Math.ceil(weight / height) * 2 ;
+    const sum = Math.ceil(weight / height);
     
     if (sum > 24){
         output.innerHTML = `
