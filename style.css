@@ -32,11 +32,12 @@ body {
 input[type=text]{
     padding: 10px;
     margin: 5px;
-    width: 160px;
+    width: 190px;
 }
 h1{
     text-align: center;
     margin-top: 25px;
+    padding: 10px;
 }
 /* img{
     width: 300px;
