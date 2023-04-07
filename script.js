@@ -16,14 +16,15 @@ const calculateSum = () => {
     const weight = Number(document.getElementById('weight').value);
     const error = document.getElementById('error');
     
-    // suming the two value
+    // BMI = mass / height
     const sum = Math.ceil(weight / height);
-    
+
     if (sum > 24){
-        output.innerHTML = `
-        <h5> The sum of the two value ${height} (in cm) and ${weight} (in kg) is ${sum} (kgcm) <i>your bmi is very high</i> </h5>
-           `
-        }
+        output.textContent = "Sorry!!! you have a high BMI";
+        output.style.color = "red";
+    }
+    output.style.color = ""
+    
     // Throw error in any of the input is underfine.
     if (!height || !weight){
          error.textContent = 'Please Enter the height or weight';
@@ -51,10 +52,5 @@ const calculateSum = () => {
     `
     
 }
-    
-     //     }
-                // }
-                
-                
-                // function to calculate the sum 
+
 

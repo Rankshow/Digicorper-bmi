@@ -52,11 +52,13 @@ form {
     font-size: 20px;
     font-weight: bolder;
     margin-top: 10px;
+    border-radius: 5px 10px 50px 80px;
 }
 #output {
     background-color: #fff;
     width: 350px;
     height: 300px;
+    border-radius: 5px 10px 50px 70px;
     /* justify-content: space-between; */
 }
  .btn {
@@ -68,6 +70,7 @@ form {
     border: none;
     border-radius: 10px;
     width: 150px;
+    margin-top: 15px;
 }
 .btn:hover{
     background-color: grey;
