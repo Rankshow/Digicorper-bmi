@@ -21,10 +21,16 @@ body {
     .wrapper{
         flex-direction: column;
     }
+ .btn {
+  margin-bottom: 30px;
+}
 }
 @media screen and (min-width: 324px) and (max-width:768px){
     .wrapper{
         flex-direction: column;
+    }
+    .btn {
+     margin-bottom: 20px;
     }
 }
 #error {
@@ -33,7 +39,7 @@ body {
     padding: 5px;
     color: #fff;
 }
-input[type=text]{
+input[type=number]{
     padding: 10px;
     margin: 5px;
     width: 190px;
