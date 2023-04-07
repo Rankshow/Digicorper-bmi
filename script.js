@@ -2,7 +2,7 @@
 // fuction to get the value;
 const submitButton = document.querySelector('.btn');
 
-const bmi = []
+const bmi = [];
 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -42,7 +42,6 @@ const calculateSum = () => {
     }
    
     // local storage
-
     const bmiValue = {
       height,
       weight,
@@ -56,8 +55,7 @@ const calculateSum = () => {
 
     output.innerHTML = `
     <h1> Your Body Mass Index ${weight} (in kg) and  ${height} (in cm) is ${sum} (kgcm) <span>Normal</span></h1>
-    `
-    
+    ` 
 }
 
 
