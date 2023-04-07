@@ -8,7 +8,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-
 }
 .wrapper {
     height: 50vh;
@@ -18,7 +17,12 @@ body {
     gap: 10px;
     align-items: center;
 }
-@media screen and (min-width:375px) and (max-width:424px){
+@media screen and (min-width:375px) and (max-width:480px){
+    .wrapper{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 324px) and (max-width:768px){
     .wrapper{
         flex-direction: column;
     }
@@ -33,6 +37,11 @@ input[type=text]{
     padding: 10px;
     margin: 5px;
     width: 190px;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    border: none;
 }
 h1{
     text-align: center;
@@ -42,9 +51,7 @@ h1{
 form {
     margin-top: 20px;
 }
-/* img{
-    width: 300px;
-} */
+
 .form-detail {
     background-color: darkgrey;
     width: 350px;
@@ -59,7 +66,6 @@ form {
     width: 350px;
     height: 300px;
     border-radius: 5px 10px 50px 70px;
-    /* justify-content: space-between; */
 }
  .btn {
      display: block;
@@ -77,4 +83,14 @@ form {
 }
 label {
     margin-left: 5px;
+}
+h4 {
+    color: #ee4917;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+span{
+    color: green;
 }

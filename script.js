@@ -17,13 +17,20 @@ const calculateSum = () => {
     const error = document.getElementById('error');
     
     // BMI = mass / height
-    const sum = Math.ceil(weight / height);
+    const sum = Math.round(weight / height);
 
+    // condition for high bmi
     if (sum > 24){
-        output.textContent = "Sorry!!! you have a high BMI";
-        output.style.color = "red";
+       return output.innerHTML = `<h4>Sorry!!! Your BMI is high ☠️</h4>`
+    } 
+    // Condition for BMI for low
+    if ( sum < 18){
+        return output.innerHTML = `<h4>Sorry!!! Your BMI is very low ⚠️</h4>` 
     }
-    output.style.color = ""
+    // When nothing is enter into the input
+    if (!sum){
+        return output.innerHTML = `<h4>Kindly enter your body mass index into the input</h4>`
+    } 
     
     // Throw error in any of the input is underfine.
     if (!height || !weight){
@@ -48,7 +55,7 @@ const calculateSum = () => {
 
 
     output.innerHTML = `
-    <h1> The sum of the two value ${height} (in cm) and ${weight} (in kg) is ${sum} (kgcm)</h1>
+    <h1> Your Body Mass Index ${weight} (in kg) and  ${height} (in cm) is ${sum} (kgcm) <span>Normal</span></h1>
     `
     
 }
